@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using Hahn.ApplicatonProcess.May2020.Domain.Helpers;
+using Hahn.ApplicatonProcess.May2020.Domain.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace Hahn.ApplicatonProcess.May2020.Web
 {
@@ -31,12 +36,23 @@ namespace Hahn.ApplicatonProcess.May2020.Web
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
+                c.DocInclusionPredicate((docName, apiDesc) =>
+                {
+                    if (!apiDesc.TryGetMethodInfo(out MethodInfo methodInfo)) return false;
+
+                    var versions = methodInfo.DeclaringType
+                        .GetCustomAttributes(true)
+                        .OfType<ApiVersionAttribute>()
+                        .SelectMany(attr => attr.Versions);
+
+                    return versions.Any(v => $"v{v.ToString()}" == docName);
+                });
+
                 c.SwaggerDoc("v1", new OpenApiInfo
                 { 
                     Title = "Hahn.ApplicatonProcess.Application",
                     Version = "v1",
                     Description = "My solution for Hahn Applicaiton",
-                    //TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
                     {
                         Name = "Paul Olabisi",
@@ -44,7 +60,23 @@ namespace Hahn.ApplicatonProcess.May2020.Web
                         Url = new Uri("https://twitter.com/paulonevrything"),
                     },
                 });
+
+                c.OperationFilter<RemoveVersionFromParameter>();
+                c.DocumentFilter<ReplaceVersionWithExactValueInPath>();
+                c.ExampleFilters();
+
+                c.OperationFilter<AddHeaderOperationFilter>("correlationId", "Correlation Id for the request", false); // adds any string you like to the request headers - in this case, a correlation id
+                c.OperationFilter<AddResponseHeadersFilter>();
+
             });
+
+            services.AddSwaggerExamplesFromAssemblyOf<ApplicantModelExample>();
+            services.AddApiVersioning(o => {
+                o.ReportApiVersions = true;
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                o.DefaultApiVersion = new ApiVersion(1, 0);
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
