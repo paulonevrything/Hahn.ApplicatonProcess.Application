@@ -28,10 +28,10 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
         [HttpPost]
         [Route("create-applicant")]
         [SwaggerRequestExample(typeof(ApplicantModel), typeof(ApplicantModelExample))]
-        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(ApplicantModel), Description = "Delivery options for the country found and returned successfully")]
-        [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(ApplicantModel))]
-        [SwaggerResponse((int)HttpStatusCode.BadRequest, Type = typeof(ApplicantModel), Description = "An invalid or missing input parameter will result in a bad request")]
-        [SwaggerResponse((int)HttpStatusCode.InternalServerError, Type = typeof(ApplicantModel), Description = "An unexpected error occurred, should not return sensitive information")]
+        [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(ApplicantModel))]
+        [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(ApplicantModel), Description = "Applicant has been created successfully")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "An invalid or missing input parameter will result in a bad request")]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "An unexpected error occurred, should not return sensitive information")]
         public IActionResult Post([FromBody] ApplicantModel applicant)
         {
             if (!ModelState.IsValid)
@@ -43,12 +43,15 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
 
 
         [HttpGet("{id}")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(ApplicantModel), Description = "Applicant {id} is found and returned successfully")]
+        [SwaggerResponse((int)HttpStatusCode.NotFound, Type = typeof(ApplicantModel), Description = "Applicant {id} is not found in the record")]
         public IActionResult Get(int id)
         {
             return Ok(_applicantService.GetApplicantById(id));
         }
 
         [HttpGet]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(List<ApplicantModel>), Description = "Applicants are found and returned successfully")]
         public IActionResult Get()
         {
             return Ok(_applicantService.GetAllApplicant());
@@ -63,6 +66,7 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
         }
 
         [HttpDelete("{id}")]
+        [SwaggerResponse((int)HttpStatusCode.NotFound, Type = typeof(ApplicantModel), Description = "Applicant {id} is not found in the record")]
         public IActionResult Delete(int id)
         {
             return Ok(_applicantService.DeleteApplicantById(id));

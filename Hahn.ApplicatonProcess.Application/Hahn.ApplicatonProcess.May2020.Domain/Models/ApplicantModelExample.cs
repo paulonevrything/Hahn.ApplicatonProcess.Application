@@ -14,7 +14,7 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Models
             {
                 Name = "Paul",
                 FamilyName = "Olabisi",
-                Address = "1 Gwalior Road, London, GB, SW15 1NP",
+                Address = "1 Joseph Lambo Street, Ebute Metta, Lagos",
                 CountryOfOrigin = "Nigeria",
                 EMailAdress = "pauloolabisi@gmail.com",
                 Age = 27,
