@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Hahn.ApplicatonProcess.May2020.Data.DataAccess;
+using Hahn.ApplicatonProcess.May2020.Data.Entities;
 using Hahn.ApplicatonProcess.May2020.Domain.Models;
+using Hahn.ApplicatonProcess.May2020.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
@@ -15,17 +18,12 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
     [ApiController]
     public class ApplicantController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IApplicantService _applicantService;
+        public ApplicantController(IApplicantService applicantService)
         {
-            return new string[] { "value1", "value2" };
+            _applicantService = applicantService;
         }
 
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
         [HttpPost]
         [Route("create-applicant")]
@@ -34,19 +32,40 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
         [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(ApplicantModel))]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Type = typeof(ApplicantModel), Description = "An invalid or missing input parameter will result in a bad request")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Type = typeof(ApplicantModel), Description = "An unexpected error occurred, should not return sensitive information")]
-        public void Post([FromBody] ApplicantModel applicant)
+        public IActionResult Post([FromBody] ApplicantModel applicant)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
 
+            return Ok(_applicantService.CreateApplicant(applicant));
+        }
+
+
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            return Ok(_applicantService.GetApplicantById(id));
+        }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_applicantService.GetAllApplicant());
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, ApplicantModel applicant)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+            return Ok(_applicantService.UpdtateApplicantById(id, applicant));
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            return Ok(_applicantService.DeleteApplicantById(id));
         }
     }
 }

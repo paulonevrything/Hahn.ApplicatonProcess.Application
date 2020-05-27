@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using FluentValidation;
+using Hahn.ApplicatonProcess.May2020.Data.DataAccess;
+using Hahn.ApplicatonProcess.May2020.Data.Entities;
 using Hahn.ApplicatonProcess.May2020.Domain.Helpers;
 using Hahn.ApplicatonProcess.May2020.Domain.Models;
+using Hahn.ApplicatonProcess.May2020.Domain.Services;
+using Hahn.ApplicatonProcess.May2020.Domain.Utils;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -77,6 +83,13 @@ namespace Hahn.ApplicatonProcess.May2020.Web
                 o.DefaultApiVersion = new ApiVersion(1, 0);
             });
 
+            services.AddTransient<IApplicantService, ApplicantService>();
+            services.AddTransient<IApplicantRepository, ApplicantRepository>();
+            services.AddDbContext<ApplicantContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddFluentValidation();
+            services.AddTransient<IValidator<ApplicantModel>, ApplicantModelValidator>();
+            services.AddTransient<Utilities>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
