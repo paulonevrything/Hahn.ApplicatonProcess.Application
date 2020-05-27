@@ -12,15 +12,15 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
 {
     public class ApplicantService : IApplicantService
     {
-        private readonly ApplicantContext _context;
         private readonly IApplicantRepository _applicantRepository;
         private readonly Utilities _utilities;
-        public ApplicantService(ApplicantContext context, ILogger<ApplicantService> logger, IConfiguration configuration,
+        private readonly IConfiguration _configuration;
+        public ApplicantService(ILogger<ApplicantService> logger, IConfiguration configuration,
             IApplicantRepository applicantRepository)
         {
-            _context = context;
             _utilities = new Utilities(logger, configuration);
             _applicantRepository = applicantRepository;
+            _configuration = configuration;
         }
         public Response CreateApplicant(ApplicantModel applicant)
         {
@@ -36,7 +36,9 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
                 return _utilities.UnsuccessfulResponse(response, ex.Message);
             }
 
-            response.Data = applicant;
+            var applicantUrl = _configuration.GetSection("AppBaseUrl").Value;
+
+            response.Data = applicantUrl + applicant.ID;
             return response;
         }
 
@@ -53,7 +55,6 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             _applicantRepository.DeleteApplicant(id);
             _applicantRepository.Save();
 
-            response.Data = applicant;
             return response;
         }
 

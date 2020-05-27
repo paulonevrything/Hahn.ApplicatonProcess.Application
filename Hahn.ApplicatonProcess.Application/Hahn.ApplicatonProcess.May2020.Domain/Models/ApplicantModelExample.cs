@@ -12,7 +12,7 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Models
         {
             return new ApplicantModel
             {
-                Name = "Paul",
+                Name = "Paulo",
                 FamilyName = "Olabisi",
                 Address = "1 Joseph Lambo Street, Ebute Metta, Lagos",
                 CountryOfOrigin = "Nigeria",

@@ -86,7 +86,6 @@ namespace Hahn.ApplicatonProcess.May2020.Web
             //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<ApplicantContext>(opt => opt.UseInMemoryDatabase("ApplicantDB"));
             services.AddScoped<ApplicantContext>();
-            //services.AddFluentValidation();
             services.AddTransient<IValidator<ApplicantModel>, ApplicantModelValidator>();
             services.AddTransient<Utilities>();
         }

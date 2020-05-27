@@ -39,20 +39,12 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Models
             var request = new RestRequest();
 
             var response = client.Get(request);
-
-            var customerDto = JsonConvert.DeserializeObject<InvalidCountryDTO>(response.Content);
             
-            if(customerDto.status == null)
+            if(response.Content.Contains(countryFulName))
             {
                 return true;
             }
             return false;
         }
-    }
-
-    public class InvalidCountryDTO
-    {
-        public string status { get; set; }
-        public string message { get; set; }
     }
 }
