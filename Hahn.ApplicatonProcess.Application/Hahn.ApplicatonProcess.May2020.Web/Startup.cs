@@ -20,6 +20,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
@@ -30,6 +31,8 @@ namespace Hahn.ApplicatonProcess.May2020.Web
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+            //Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -91,7 +94,7 @@ namespace Hahn.ApplicatonProcess.May2020.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -119,6 +122,8 @@ namespace Hahn.ApplicatonProcess.May2020.Web
             {
                 endpoints.MapControllers();
             });
+
+            loggerFactory.AddSerilog();
 
         }
     }
