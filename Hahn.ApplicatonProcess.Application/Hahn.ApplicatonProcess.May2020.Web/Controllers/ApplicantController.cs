@@ -23,12 +23,10 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
     {
         private readonly IApplicantService _applicantService;
         private readonly IConfiguration _configuration;
-        private readonly ILogger _logger;
-        public ApplicantController(IApplicantService applicantService, IConfiguration configuration, ILogger<ApplicantController> logger)
+        public ApplicantController(IApplicantService applicantService, IConfiguration configuration)
         {
             _applicantService = applicantService;
             _configuration = configuration;
-            _logger = logger;
         }
 
 
@@ -41,8 +39,6 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "An unexpected error occurred, should not return sensitive information")]
         public IActionResult Post([FromBody] ApplicantModel applicant)
         {
-            _logger.LogInformation("Start : Getting item details for {ID}", applicant);
-
             ApplicantModelValidator validationRules = new ApplicantModelValidator(_configuration);
 
             ValidationResult result = validationRules.Validate(applicant);

@@ -15,15 +15,18 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
         private readonly IApplicantRepository _applicantRepository;
         private readonly Utilities _utilities;
         private readonly IConfiguration _configuration;
+        private readonly ILogger _logger;
         public ApplicantService(ILogger<ApplicantService> logger, IConfiguration configuration,
             IApplicantRepository applicantRepository)
         {
             _utilities = new Utilities(logger, configuration);
             _applicantRepository = applicantRepository;
             _configuration = configuration;
+            _logger = logger;
         }
         public Response CreateApplicant(ApplicantModel applicant)
         {
+            _logger.LogInformation("Request Made to CreateApplicant: ", applicant.ToString());
             Response response = _utilities.InitializeResponse();
 
             try
@@ -33,12 +36,14 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             }
             catch (Exception ex)
             {
-                return _utilities.UnsuccessfulResponse(response, ex.Message);
+                return _utilities.CatchException(ex, response);
             }
 
             var applicantUrl = _configuration.GetSection("AppBaseUrl").Value;
 
             response.Data = applicantUrl + applicant.ID;
+
+            _logger.LogInformation($"Successfully created applicant {applicant.ID}");
             return response;
         }
 
@@ -54,12 +59,15 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
 
             _applicantRepository.DeleteApplicant(id);
             _applicantRepository.Save();
+            _logger.LogInformation($"Successfully deleted applicant {id}");
 
             return response;
         }
 
         public Response GetAllApplicant()
         {
+            _logger.LogInformation($"Retrieving all applicants...");
+
             Response response = _utilities.InitializeResponse();
 
             response.Data = _applicantRepository.GetApplicants();
@@ -69,6 +77,7 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
 
         public Response GetApplicantById(int id)
         {
+            _logger.LogInformation($"Retrieving applicants {id}");
             Response response = _utilities.InitializeResponse();
             var applicant = _applicantRepository.GetApplicantByID(id);
 
@@ -98,10 +107,12 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             }
             catch (Exception ex)
             {
-                return _utilities.UnsuccessfulResponse(response, ex.Message);
+                return _utilities.CatchException(ex, response);
             }
             
             response.Data = _applicantRepository.GetApplicantByID(id);
+
+            _logger.LogInformation($"Successfully updated {id}");
 
             return response;
         }

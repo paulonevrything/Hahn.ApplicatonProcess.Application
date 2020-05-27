@@ -34,13 +34,13 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Utils
             response.ResponseMessage = message;
             response.Data = data;
 
-            logger.LogInformation($"REQUEST => {Environment.NewLine}" +
+            logger.LogError($"REQUEST => {Environment.NewLine}" +
                                        $"RESPONSE => {response.Data} {response.ResponseMessage}");
 
             return response;
         }
 
-        public Response CatchException(Exception ex, Response response, string v)
+        public Response CatchException(Exception ex, Response response)
         {
             response.ResponseCode = "99";
             response.ResponseMessage = "Error occurred while processing your request";
