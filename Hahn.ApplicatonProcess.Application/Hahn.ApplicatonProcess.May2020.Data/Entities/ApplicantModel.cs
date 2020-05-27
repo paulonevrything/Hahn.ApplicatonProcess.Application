@@ -11,6 +11,7 @@ namespace Hahn.ApplicatonProcess.May2020.Data.Entities
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [JsonIgnore]
+        [Key]
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
