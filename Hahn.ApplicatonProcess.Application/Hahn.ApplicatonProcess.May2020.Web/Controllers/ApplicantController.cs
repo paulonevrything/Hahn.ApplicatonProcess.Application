@@ -8,8 +8,10 @@ using Hahn.ApplicatonProcess.May2020.Data.Entities;
 using Hahn.ApplicatonProcess.May2020.Domain.Models;
 using Hahn.ApplicatonProcess.May2020.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
+using FluentValidation.Results;
 
 namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
 {
@@ -19,9 +21,11 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
     public class ApplicantController : ControllerBase
     {
         private readonly IApplicantService _applicantService;
-        public ApplicantController(IApplicantService applicantService)
+        private readonly IConfiguration _configuration;
+        public ApplicantController(IApplicantService applicantService, IConfiguration configuration)
         {
             _applicantService = applicantService;
+            _configuration = configuration;
         }
 
 
@@ -34,9 +38,19 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "An unexpected error occurred, should not return sensitive information")]
         public IActionResult Post([FromBody] ApplicantModel applicant)
         {
-            if (!ModelState.IsValid)
-                return BadRequest();
+            ApplicantModelValidator validationRules = new ApplicantModelValidator(_configuration);
 
+            ValidationResult result = validationRules.Validate(applicant);
+
+            if (!result.IsValid)
+            {
+                foreach(ValidationFailure validationFailure in result.Errors)
+                {
+                    ModelState.AddModelError(validationFailure.PropertyName, validationFailure.ErrorMessage);
+                }
+
+                return BadRequest(ModelState);
+            }
             return Ok(_applicantService.CreateApplicant(applicant));
         }
 
@@ -60,8 +74,17 @@ namespace Hahn.ApplicatonProcess.May2020.Web.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, ApplicantModel applicant)
         {
-            if (!ModelState.IsValid)
-                return BadRequest();
+            ApplicantModelValidator validationRules = new ApplicantModelValidator(_configuration);
+
+            ValidationResult result = validationRules.Validate(applicant);
+
+            if (!result.IsValid)
+            {
+                foreach (ValidationFailure validationFailure in result.Errors)
+                {
+                    ModelState.AddModelError(validationFailure.PropertyName, validationFailure.ErrorMessage);
+                }
+            }
             return Ok(_applicantService.UpdtateApplicantById(id, applicant));
         }
 

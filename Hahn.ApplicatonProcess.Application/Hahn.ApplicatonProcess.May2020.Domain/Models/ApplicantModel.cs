@@ -20,13 +20,13 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Models
         {
             Configuration = configuration;
 
-            RuleFor(x => x.Hired).NotNull();
-            RuleFor(x => x.Name).MinimumLength(5);
-            RuleFor(x => x.FamilyName).MinimumLength(5);
-            RuleFor(x => x.EMailAdress).EmailAddress();
-            RuleFor(x => x.Age).InclusiveBetween(20, 60);
-            RuleFor(x => x.Address).MinimumLength(10);
-            RuleFor(x => x.CountryOfOrigin).Must(list => CountryIsValid(list))
+            RuleFor(x => x.Hired).NotNull().WithMessage("Applicant hired status must not be null");
+            RuleFor(x => x.Name).MinimumLength(5).WithMessage("Applicant Name must not be less than 5 characters");
+            RuleFor(x => x.FamilyName).MinimumLength(5).WithMessage("Applicant FamilyName must not be less than 5 characters");
+            RuleFor(x => x.EMailAdress).EmailAddress().WithMessage("Please provide a valid EmailAddress");
+            RuleFor(x => x.Age).InclusiveBetween(20, 60).WithMessage("Applicant Age must be between 20 and 60");
+            RuleFor(x => x.Address).MinimumLength(10).WithMessage("Applicant Address must not be less than 10 characters");
+            RuleFor(x => x.CountryOfOrigin).Must(countryFullName => CountryIsValid(countryFullName))
                 .WithMessage("The applicant's country is not a valid country");
         }
 
