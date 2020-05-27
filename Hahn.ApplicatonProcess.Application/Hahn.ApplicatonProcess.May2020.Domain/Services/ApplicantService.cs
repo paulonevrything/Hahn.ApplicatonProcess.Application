@@ -25,8 +25,16 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
         public Response CreateApplicant(ApplicantModel applicant)
         {
             Response response = _utilities.InitializeResponse();
-            _applicantRepository.InsertApplicant(applicant);
-            _applicantRepository.Save();
+
+            try
+            {
+                _applicantRepository.InsertApplicant(applicant);
+                _applicantRepository.Save();
+            }
+            catch (Exception ex)
+            {
+                return _utilities.UnsuccessfulResponse(response, ex.Message);
+            }
 
             response.Data = applicant;
             return response;
@@ -37,7 +45,7 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             Response response = _utilities.InitializeResponse();
             var applicant = _applicantRepository.GetApplicantByID(id);
 
-            if(applicant == null)
+            if (applicant == null)
             {
                 return _utilities.UnsuccessfulResponse(response, "Invalid id supplied. Could not match applicant to id");
             }
@@ -81,11 +89,17 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             {
                 return _utilities.UnsuccessfulResponse(response, "Invalid id supplied. Could not match applicant to id");
             }
-
-            // Update and save changes
-            _applicantRepository.UpdateApplicant(applicant);
-            _applicantRepository.Save();
-
+            try
+            {
+                // Update and save changes
+                _applicantRepository.UpdateApplicant(applicant);
+                _applicantRepository.Save();
+            }
+            catch (Exception ex)
+            {
+                return _utilities.UnsuccessfulResponse(response, ex.Message);
+            }
+            
             response.Data = _applicantRepository.GetApplicantByID(id);
 
             return response;

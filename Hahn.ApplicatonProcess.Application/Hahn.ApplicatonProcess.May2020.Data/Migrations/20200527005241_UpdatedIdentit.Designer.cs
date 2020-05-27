@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hahn.ApplicatonProcess.May2020.Data.Migrations
 {
     [DbContext(typeof(ApplicantContext))]
-    [Migration("20200527001352_UpdatedId")]
-    partial class UpdatedId
+    [Migration("20200527005241_UpdatedIdentit")]
+    partial class UpdatedIdentit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,8 +22,10 @@ namespace Hahn.ApplicatonProcess.May2020.Data.Migrations
 
             modelBuilder.Entity("Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel", b =>
                 {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -49,7 +51,7 @@ namespace Hahn.ApplicatonProcess.May2020.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Applicant");
                 });

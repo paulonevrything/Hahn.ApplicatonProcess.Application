@@ -9,10 +9,9 @@ namespace Hahn.ApplicatonProcess.May2020.Data.Entities
 {
     public class ApplicantModel
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [JsonIgnore]
         [Key]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

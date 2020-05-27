@@ -71,9 +71,6 @@ namespace Hahn.ApplicatonProcess.May2020.Web
                 c.DocumentFilter<ReplaceVersionWithExactValueInPath>();
                 c.ExampleFilters();
 
-                c.OperationFilter<AddHeaderOperationFilter>("correlationId", "Correlation Id for the request", false); // adds any string you like to the request headers - in this case, a correlation id
-                c.OperationFilter<AddResponseHeadersFilter>();
-
             });
 
             services.AddSwaggerExamplesFromAssemblyOf<ApplicantModelExample>();
@@ -85,8 +82,10 @@ namespace Hahn.ApplicatonProcess.May2020.Web
 
             services.AddTransient<IApplicantService, ApplicantService>();
             services.AddTransient<IApplicantRepository, ApplicantRepository>();
-            services.AddDbContext<ApplicantContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicantContext>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicantContext>(opt => opt.UseInMemoryDatabase("ApplicantDB"));
+            services.AddScoped<ApplicantContext>();
             //services.AddFluentValidation();
             services.AddTransient<IValidator<ApplicantModel>, ApplicantModelValidator>();
             services.AddTransient<Utilities>();
@@ -121,6 +120,9 @@ namespace Hahn.ApplicatonProcess.May2020.Web
             {
                 endpoints.MapControllers();
             });
+
         }
     }
+
+    
 }
