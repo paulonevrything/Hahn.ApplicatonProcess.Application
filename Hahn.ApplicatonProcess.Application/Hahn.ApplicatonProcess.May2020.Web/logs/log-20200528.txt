@@ -1,0 +1,955 @@
+2020-05-28 12:13:07.500 +01:00 [Information] Starting up
+2020-05-28 12:13:11.896 +01:00 [Debug] Hosting starting
+2020-05-28 12:13:13.217 +01:00 [Debug] Loaded hosting startup assembly "Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:13:13.221 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-28 12:13:13.227 +01:00 [Information] Hosting environment: "Development"
+2020-05-28 12:13:13.227 +01:00 [Information] Content root path: "C:\Users\P7580\Documents\MEGAsync\Engineering\C#\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:13:13.227 +01:00 [Debug] Hosting started
+2020-05-28 12:13:13.355 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/weatherforecast  
+2020-05-28 12:13:13.366 +01:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-05-28 12:13:13.550 +01:00 [Debug] 1 candidate(s) found for the request path '"/weatherforecast"'
+2020-05-28 12:13:13.563 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"WeatherForecast"' is valid for the request path '"/weatherforecast"'
+2020-05-28 12:13:13.806 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:13:13.946 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:13:13.946 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:13:14.000 +01:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-05-28 12:13:14.025 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Hahn.ApplicatonProcess.May2020.Web.WeatherForecast] Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:13:14.030 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:13:14.031 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:13:14.031 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:13:14.031 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:13:14.031 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:13:14.033 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:13:14.034 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:13:14.047 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:13:14.056 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:13:14.056 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:13:14.056 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:13:14.057 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:13:14.057 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Web.WeatherForecast[]"'.
+2020-05-28 12:13:14.123 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 80.0162ms
+2020-05-28 12:13:14.124 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:13:14.128 +01:00 [Information] Request finished in 781.1876ms 200 application/json; charset=utf-8
+2020-05-28 12:14:53.250 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/swagger/index.html  
+2020-05-28 12:14:53.254 +01:00 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2020-05-28 12:14:53.254 +01:00 [Debug] Request did not match any endpoints
+2020-05-28 12:14:53.328 +01:00 [Information] Request finished in 80.5673ms 200 text/html;charset=utf-8
+2020-05-28 12:14:55.321 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/swagger/v1/swagger.json  
+2020-05-28 12:14:55.322 +01:00 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2020-05-28 12:14:55.323 +01:00 [Debug] Request did not match any endpoints
+2020-05-28 12:14:56.348 +01:00 [Information] Request finished in 1029.9082ms 200 application/json;charset=utf-8
+2020-05-28 12:16:40.784 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/api/Applicant/v1/create-applicant application/json 189
+2020-05-28 12:16:40.785 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:16:40.793 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/create-applicant"' is valid for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:16:40.797 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:16:40.798 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:16:40.798 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:16:40.836 +01:00 [Information] Route matched with "{action = \"Post\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Post(Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:16:40.836 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:16:40.837 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:16:40.837 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:16:40.837 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:16:40.837 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:16:40.837 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:16:41.080 +01:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-05-28 12:16:41.122 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:16:41.135 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:16:41.142 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:16:41.144 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:16:41.165 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:16:41.166 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:16:41.166 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:16:41.166 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:16:41.192 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:16:43.313 +01:00 [Information] Request Made to CreateApplicant: 
+2020-05-28 12:16:44.256 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:16:44.295 +01:00 [Debug] '"ApplicantContext"' generated a value for the '"ID"' property of new '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:16:44.358 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:16:44.361 +01:00 [Debug] SaveCh2020-05-28 12:21:34.159 +01:00 [Information] Starting up
+2020-05-28 12:21:38.937 +01:00 [Debug] Hosting starting
+2020-05-28 12:21:40.271 +01:00 [Debug] Loaded hosting startup assembly "Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:21:40.272 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-28 12:21:40.272 +01:00 [Information] Hosting environment: "Development"
+2020-05-28 12:21:40.272 +01:00 [Information] Content root path: "C:\Users\P7580\Documents\MEGAsync\Engineering\C#\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:21:40.272 +01:00 [Debug] Hosting started
+2020-05-28 12:21:40.514 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/weatherforecast  
+2020-05-28 12:21:40.535 +01:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-05-28 12:21:40.628 +01:00 [Debug] 1 candidate(s) found for the request path '"/weatherforecast"'
+2020-05-28 12:21:40.635 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"WeatherForecast"' is valid for the request path '"/weatherforecast"'
+2020-05-28 12:21:40.703 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:21:40.792 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:21:40.793 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:21:40.820 +01:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-05-28 12:21:40.856 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Hahn.ApplicatonProcess.May2020.Web.WeatherForecast] Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:21:40.867 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:21:40.867 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:21:40.867 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsA2020-05-28 12:25:12.011 +01:00 [Information] Starting up
+2020-05-28 12:25:16.184 +01:00 [Debug] Hosting starting
+2020-05-28 12:25:17.803 +01:00 [Debug] Loaded hosting startup assembly "Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:25:17.857 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-28 12:25:17.857 +01:00 [Information] Hosting environment: "Development"
+2020-05-28 12:25:17.858 +01:00 [Information] Content root path: "C:\Users\P7580\Documents\MEGAsync\Engineering\C#\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:25:17.858 +01:00 [Debug] Hosting started
+2020-05-28 12:25:18.181 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/weatherforecast  
+2020-05-28 12:25:18.192 +01:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-05-28 12:25:18.286 +01:00 [Debug] 1 candidate(s) found for the request path '"/weatherforecast"'
+2020-05-28 12:25:18.297 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"WeatherForecast"' is valid for the request path '"/weatherforecast"'
+2020-05-28 12:25:18.350 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:25:18.419 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:25:18.420 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:25:18.440 +01:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-05-28 12:25:18.468 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Hahn.ApplicatonProcess.May2020.Web.WeatherForecast] Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:25:18.475 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:25:18.475 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:25:18.475 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:25:18.475 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:25:18.476 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:25:18.477 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:25:18.477 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:25:18.493 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:25:18.500 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:25:18.500 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:25:18.500 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:25:18.501 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:25:18.502 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Web.WeatherForecast[]"'.
+2020-05-28 12:25:18.735 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 246.4946ms
+2020-05-28 12:25:18.736 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:25:18.739 +01:00 [Information] Request finished in 562.2028ms 200 application/json; charset=utf-8
+2020-05-28 12:26:14.916 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/swagger/index.html  
+2020-05-28 12:26:14.920 +01:00 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2020-05-28 12:26:14.921 +01:00 [Debug] Request did not match any endpoints
+2020-05-28 12:26:15.027 +01:00 [Information] Request finished in 112.3574ms 200 text/html;charset=utf-8
+2020-05-28 12:26:16.172 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/swagger/v1/swagger.json  
+2020-05-28 12:26:16.174 +01:00 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2020-05-28 12:26:16.175 +01:00 [Debug] Request did not match any endpoints
+2020-05-28 12:26:16.968 +01:00 [Information] Request finished in 796.9932ms 200 application/json;charset=utf-8
+2020-05-28 12:26:22.184 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/api/Applicant/v1/create-applicant application/json 189
+2020-05-28 12:26:22.185 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:26:22.187 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/create-applicant"' is valid for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:26:22.190 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:22.191 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:26:22.191 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:22.217 +01:00 [Information] Route matched with "{action = \"Post\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Post(Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:26:22.217 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:26:22.217 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:26:22.218 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:26:22.218 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:26:22.218 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:26:22.218 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:26:22.502 +01:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-05-28 12:26:22.541 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:26:22.551 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:26:22.558 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:26:22.560 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:26:22.585 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:26:22.586 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:26:22.586 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:26:22.586 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:26:22.609 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:26:25.455 +01:00 [Information] Request Made to CreateApplicant: 
+2020-05-28 12:26:26.554 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:26:26.674 +01:00 [Debug] '"ApplicantContext"' generated a value for the '"ID"' property of new '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:26.801 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:26.807 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:26:26.815 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:26:26.854 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:26:26.902 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:26:26.932 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:26.948 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:26:26.949 +01:00 [Information] Successfully created applicant 1
+2020-05-28 12:26:26.950 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:26:26.953 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:26:26.953 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:26:26.953 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:26:26.953 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:26:26.954 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:26:26.954 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:26:26.968 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)" in 4750.6614ms
+2020-05-28 12:26:26.969 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:26.974 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:26:26.977 +01:00 [Information] Request finished in 4794.3152ms 200 application/json; charset=utf-8
+2020-05-28 12:26:35.788 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api/Applicant/v1  
+2020-05-28 12:26:35.789 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1"'
+2020-05-28 12:26:35.789 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}"' is valid for the request path '"/api/Applicant/v1"'
+2020-05-28 12:26:35.790 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:35.791 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:26:35.791 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:35.794 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:26:35.795 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:26:35.795 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:26:35.795 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:26:35.795 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:26:35.795 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:26:35.795 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:26:35.797 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:26:35.798 +01:00 [Information] Retrieving all applicants...
+2020-05-28 12:26:35.861 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:26:36.286 +01:00 [Debug] "queryContext => new QueryingEnumerable<ApplicantModel>(
+    queryContext, 
+    InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: ApplicantModel)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 0, Property: ApplicantModel.ID (int) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: ApplicantModel.Address (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 2, Property: ApplicantModel.Age (int) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: ApplicantModel.CountryOfOrigin (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 4, Property: ApplicantModel.EMailAdress (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 5, Property: ApplicantModel.FamilyName (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<bool>(valueBuffer, 6, Property: ApplicantModel.Hired (bool) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 7, Property: ApplicantModel.Name (string) Required) 
+        })), 
+    Func<QueryContext, ValueBuffer, ApplicantModel>, 
+    Hahn.ApplicatonProcess.May2020.Data.DataAccess.ApplicantContext, 
+    DiagnosticsLogger<Query>
+)"
+2020-05-28 12:26:36.321 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:36.324 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:26:36.324 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:26:36.325 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:26:36.325 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:26:36.325 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:26:36.325 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:26:36.325 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:26:36.337 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 542.0071ms
+2020-05-28 12:26:36.337 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:36.337 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:26:36.338 +01:00 [Information] Request finished in 551.3899ms 200 application/json; charset=utf-8
+2020-05-28 12:26:51.368 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/api/Applicant/v1/create-applicant application/json 188
+2020-05-28 12:26:51.369 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:26:51.369 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/create-applicant"' is valid for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:26:51.369 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:51.370 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:26:51.370 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:51.371 +01:00 [Information] Route matched with "{action = \"Post\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Post(Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:26:51.372 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:26:51.372 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:26:51.372 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:26:51.372 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:26:51.372 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:26:51.373 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:26:51.377 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:26:51.377 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:26:51.378 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:26:51.378 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:26:51.379 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:26:51.379 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:26:51.379 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:26:51.379 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:26:51.380 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:26:52.895 +01:00 [Information] Request Made to CreateApplicant: 
+2020-05-28 12:26:52.909 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:26:52.911 +01:00 [Debug] '"ApplicantContext"' generated a value for the '"ID"' property of new '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:52.912 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:52.912 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:26:52.915 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:26:52.916 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:26:52.917 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:26:52.917 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:26:52.917 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:26:52.918 +01:00 [Information] Successfully created applicant 2
+2020-05-28 12:26:52.918 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:26:52.919 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:26:52.920 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:26:52.920 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:26:52.920 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:26:52.920 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:26:52.920 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:26:52.924 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)" in 1551.4847ms
+2020-05-28 12:26:52.924 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:26:52.924 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:26:52.924 +01:00 [Information] Request finished in 1556.3825ms 200 application/json; charset=utf-8
+2020-05-28 12:31:34.827 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api/Applicant/v1  
+2020-05-28 12:31:34.829 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1"'
+2020-05-28 12:31:34.829 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}"' is valid for the request path '"/api/Applicant/v1"'
+2020-05-28 12:31:34.830 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:31:34.831 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:31:34.831 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:31:34.833 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:31:34.834 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:31:34.834 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:31:34.834 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:31:34.834 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:31:34.834 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:31:34.834 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:31:34.835 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:31:34.835 +01:00 [Information] Retrieving all applicants...
+2020-05-28 12:31:34.836 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:31:34.839 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:31:34.839 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:31:34.841 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:31:34.848 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:31:34.848 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:31:34.848 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:31:34.848 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:31:34.849 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:31:34.849 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:31:34.857 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 23.6133ms
+2020-05-28 12:31:34.858 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:31:34.858 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:31:34.858 +01:00 [Information] Request finished in 31.9294ms 200 application/json; charset=utf-8
+2020-05-28 12:31:48.872 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/2 application/json 189
+2020-05-28 12:31:48.872 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:31:48.873 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:31:48.873 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:31:48.874 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:31:48.874 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:31:48.884 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:31:48.884 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:31:48.884 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:31:48.884 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:31:48.884 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:31:48.884 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:31:48.884 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:31:48.884 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:31:48.886 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:31:48.887 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:31:48.888 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:31:48.888 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:31:48.888 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:31:48.888 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:31:48.888 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:31:48.888 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:31:48.888 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:31:48.890 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:31:48.890 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:31:48.890 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:31:48.890 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:31:48.890 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:31:49.680 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:31:49.895 +01:00 [Debug] "queryContext => new QueryingEnumerable<ApplicantModel>(
+    queryContext, 
+    new ResultEnumerable(() => InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: ApplicantModel)
+        .Where(valueBuffer => EntityMaterializerSource.TryReadValue<int>(valueBuffer, 0, Property: ApplicantModel.ID (int) Required PK AfterSave:Throw ValueGenerated.OnAdd) == InMemoryExpressionTranslatingExpressionVisitor.GetParameterValue<int>(
+            queryContext: queryContext, 
+            parameterName: \"__p_0\"))
+        .FirstOrDefault())
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 0, Property: ApplicantModel.ID (int) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: ApplicantModel.Address (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 2, Property: ApplicantModel.Age (int) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: ApplicantModel.CountryOfOrigin (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 4, Property: ApplicantModel.EMailAdress (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 5, Property: ApplicantModel.FamilyName (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<bool>(valueBuffer, 6, Property: ApplicantModel.Hired (bool) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 7, Property: ApplicantModel.Name (string) Required) 
+        })), 
+    Func<QueryContext, ValueBuffer, ApplicantModel>, 
+    Hahn.ApplicatonProcess.May2020.Data.DataAccess.ApplicantContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()"
+2020-05-28 12:31:49.909 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:31:49.920 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:31:49.920 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:31:49.920 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:31:49.931 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:31:50.045 +01:00 [Debug] "Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+2020-05-28 12:33:14.079 +01:00 [Error] Attempted to update or delete an entity that does not exist in the store. REQUEST BODY =>  REQUEST ID => _dfcf5954d9a342fc98aa5b1a55a107ab
+2020-05-28 12:33:14.080 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:33:14.080 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:33:14.080 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:33:14.080 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:33:14.080 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:33:14.080 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:33:14.084 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)" in 85197.8452ms
+2020-05-28 12:33:14.084 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:33:14.085 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:33:14.090 +01:00 [Information] Request finished in 85215.8076ms 200 application/json; charset=utf-8
+2020-05-28 12:33:22.657 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api/Applicant/v1  
+2020-05-28 12:33:22.657 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1"'
+2020-05-28 12:33:22.657 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}"' is valid for the request path '"/api/Applicant/v1"'
+2020-05-28 12:33:22.658 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:33:22.658 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:33:22.658 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:33:22.658 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:33:22.659 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:33:22.659 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:33:22.659 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:33:22.659 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:33:22.659 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:33:22.659 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:33:22.660 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:33:22.660 +01:00 [Information] Retrieving all applicants...
+2020-05-28 12:33:22.662 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:33:22.662 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:33:22.664 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:33:22.664 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:33:22.664 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:33:22.665 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:33:22.665 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:33:22.665 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:33:22.665 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:33:22.665 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:33:22.667 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 8.2148ms
+2020-05-28 12:33:22.667 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:33:22.667 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:33:22.668 +01:00 [Information] Request finished in 10.7177ms 200 application/json; charset=utf-8
+2020-05-28 12:33:29.933 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/2 application/json 189
+2020-05-28 12:33:29.933 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:33:29.935 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:33:29.935 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:33:29.936 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:33:29.936 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:33:29.936 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:33:29.936 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:33:29.936 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:33:29.937 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:33:29.937 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:33:29.937 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:33:29.937 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:33:29.959 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:33:29.959 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:33:29.959 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:33:29.960 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:33:29.960 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:33:29.960 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:33:29.960 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:33:29.960 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:33:29.960 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:33:29.960 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:33:29.962 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:33:29.962 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:33:29.962 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:33:29.962 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:33:29.963 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:33:30.664 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:33:30.678 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:33:34.296 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:34:09.404 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:34:09.404 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:34:09.404 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:34:09.418 +01:00 [Debug] "Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+2020-05-28 12:34:11.069 +01:00 [Error] Attempted to update or delete an entity that does not exist in the store. REQUEST BODY =>  REQUEST ID => _d0835a568dfe4d5d9d0c7bafecda33f4
+2020-05-28 12:34:11.069 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:34:11.070 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:34:11.070 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:34:11.070 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:34:11.070 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:34:11.070 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:34:11.083 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)" in 41146.2697ms
+2020-05-28 12:34:11.083 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:34:11.083 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:34:11.090 +01:00 [Information] Request finished in 41151.1118ms 200 application/json; charset=utf-8
+2020-05-28 12:34:17.274 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/2 application/json 182
+2020-05-28 12:34:17.275 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:34:17.275 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:34:17.275 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:34:17.286 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:34:17.286 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:34:17.287 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:34:17.287 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:34:17.287 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:34:17.287 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:34:17.287 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:34:17.287 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:34:17.287 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:34:17.288 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:34:17.288 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:34:17.288 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:34:17.289 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:34:17.289 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:34:17.289 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:34:17.289 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:34:17.289 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:34:17.289 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:34:17.289 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:34:17.291 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:34:17.291 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:34:17.291 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:34:17.291 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:34:17.291 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:34:17.943 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:34:17.947 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:38:45.442 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:38:45.442 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:38:45.442 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:38:45.442 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:38:45.447 +01:00 [Debug] "Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Attempted to update or delete an entity that does not exist in the store.
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Update(IUpdateEntry entry)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)
+   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)"
+2020-05-28 12:38:46.711 +01:00 [Error] Attempted to update or delete an entity that does not exist in the store. REQUEST BODY =>  REQUEST ID => _f87fea4ffe314ec0b607b71c2a061369
+2020-05-28 12:38:46.722 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:38:46.723 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:38:46.723 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:38:46.723 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:38:46.723 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:38:46.724 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:38:46.728 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)" in 269441.0702ms
+2020-05-28 12:38:46.728 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:38:46.729 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:38:46.731 +01:00 [Information] Request finished in 269454.5958ms 200 application/json; charset=utf-8
+2020-05-28 12:38:58.711 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/2 application/json 189
+2020-05-28 12:38:58.713 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:38:58.714 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:38:58.714 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:38:58.714 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:38:58.714 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:38:58.715 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:38:58.715 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:38:58.715 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:38:58.715 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:38:58.715 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:38:58.715 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:38:58.715 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:38:58.716 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:38:58.717 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:38:58.717 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:38:58.717 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:38:58.717 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:38:58.717 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:38:58.718 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:38:58.718 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:38:58.718 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:38:58.718 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:38:58.720 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:38:58.720 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:38:58.720 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:38:58.720 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:38:58.720 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:38:58.800 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/2 application/json 189
+2020-05-28 12:38:58.800 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:38:58.800 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:38:58.800 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:38:58.800 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:38:58.800 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:38:58.801 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:38:58.801 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:38:58.801 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:38:58.801 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:38:58.801 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:38:58.801 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:38:58.801 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:38:58.801 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:38:58.802 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:38:58.804 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:38:58.804 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:38:58.804 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:38:58.804 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:38:58.804 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:38:58.804 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:38:58.804 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:38:58.804 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:38:58.805 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:38:58.805 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:38:58.805 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:38:58.805 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:38:58.805 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:38:59.515 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:38:59.515 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:38:59.522 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:38:59.545 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:39:51.553 +01:00 [Error] The instance of entity type 'ApplicantModel' cannot be tracked because another instance with the same key value for {'ID'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values. REQUEST BODY =>  REQUEST ID => _206ccfa9f0b34b95b3458c1086da3a12
+2020-05-28 12:39:51.554 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatt2020-05-28 12:42:22.924 +01:00 [Information] Starting up
+2020-05-28 12:42:24.814 +01:00 [Debug] Hosting starting
+2020-05-28 12:42:26.515 +01:00 [Debug] Loaded hosting startup assembly "Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:42:26.516 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-05-28 12:42:26.546 +01:00 [Information] Hosting environment: "Development"
+2020-05-28 12:42:26.546 +01:00 [Information] Content root path: "C:\Users\P7580\Documents\MEGAsync\Engineering\C#\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.May2020.Web"
+2020-05-28 12:42:26.547 +01:00 [Debug] Hosting started
+2020-05-28 12:42:26.769 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/weatherforecast  
+2020-05-28 12:42:26.778 +01:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2020-05-28 12:42:26.971 +01:00 [Debug] 1 candidate(s) found for the request path '"/weatherforecast"'
+2020-05-28 12:42:27.031 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"WeatherForecast"' is valid for the request path '"/weatherforecast"'
+2020-05-28 12:42:27.098 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:42:27.200 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:42:27.201 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:42:27.234 +01:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-05-28 12:42:27.315 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Hahn.ApplicatonProcess.May2020.Web.WeatherForecast] Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:42:27.328 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:42:27.328 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:42:27.328 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:42:27.328 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:42:27.328 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:42:27.330 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:42:27.331 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:42:27.378 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:42:27.385 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:42:27.385 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:42:27.385 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:42:27.386 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:42:27.387 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Web.WeatherForecast[]"'.
+2020-05-28 12:42:27.517 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 175.1112ms
+2020-05-28 12:42:27.519 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:42:27.533 +01:00 [Information] Request finished in 759.739ms 200 application/json; charset=utf-8
+2020-05-28 12:43:40.634 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/swagger/index.html  
+2020-05-28 12:43:40.650 +01:00 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2020-05-28 12:43:40.650 +01:00 [Debug] Request did not match any endpoints
+2020-05-28 12:43:40.735 +01:00 [Information] Request finished in 101.582ms 200 text/html;charset=utf-8
+2020-05-28 12:43:41.773 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/swagger/v1/swagger.json  
+2020-05-28 12:43:41.774 +01:00 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2020-05-28 12:43:41.774 +01:00 [Debug] Request did not match any endpoints
+2020-05-28 12:43:42.629 +01:00 [Information] Request finished in 856.4804ms 200 application/json;charset=utf-8
+2020-05-28 12:44:03.047 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/api/Applicant/v1/create-applicant application/json 189
+2020-05-28 12:44:03.064 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:44:03.085 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/create-applicant"' is valid for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:44:03.092 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:03.093 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:44:03.094 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:03.140 +01:00 [Information] Route matched with "{action = \"Post\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Post(Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:44:03.140 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:44:03.140 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:44:03.141 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:03.141 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:44:03.141 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:03.141 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:03.395 +01:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2020-05-28 12:44:03.445 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:03.456 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:44:03.460 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:44:03.461 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:44:03.483 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:44:03.483 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:03.483 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:03.483 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:44:03.519 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:05.560 +01:00 [Information] Request Made to CreateApplicant: 
+2020-05-28 12:44:06.482 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:44:06.686 +01:00 [Debug] '"ApplicantContext"' generated a value for the '"ID"' property of new '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:06.883 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:06.891 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:44:06.897 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:44:06.930 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:44:06.990 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:44:07.016 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:07.040 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:44:07.040 +01:00 [Information] Successfully created applicant 1
+2020-05-28 12:44:07.042 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:44:07.045 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:44:07.046 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:44:07.046 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:44:07.046 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:44:07.046 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:44:07.046 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:44:07.075 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)" in 3934.2089ms
+2020-05-28 12:44:07.075 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:07.078 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:44:07.080 +01:00 [Information] Request finished in 4033.2006ms 200 application/json; charset=utf-8
+2020-05-28 12:44:12.207 +01:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/api/Applicant/v1/create-applicant application/json 187
+2020-05-28 12:44:12.239 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:44:12.239 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/create-applicant"' is valid for the request path '"/api/Applicant/v1/create-applicant"'
+2020-05-28 12:44:12.240 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:12.240 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:44:12.241 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:12.241 +01:00 [Information] Route matched with "{action = \"Post\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Post(Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:44:12.242 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:44:12.242 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:44:12.242 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:12.242 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:44:12.242 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:12.242 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:12.243 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:12.243 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:44:12.244 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:44:12.244 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:44:12.245 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:44:12.245 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:12.245 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:12.245 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:44:12.245 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:12.965 +01:00 [Information] Request Made to CreateApplicant: 
+2020-05-28 12:44:13.032 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:44:13.033 +01:00 [Debug] '"ApplicantContext"' generated a value for the '"ID"' property of new '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:13.034 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:13.034 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:44:13.034 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:44:13.034 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:44:13.035 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:44:13.036 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:13.036 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:44:13.036 +01:00 [Information] Successfully created applicant 2
+2020-05-28 12:44:13.037 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:44:13.037 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:44:13.037 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:44:13.037 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:44:13.038 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:44:13.038 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:44:13.038 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:44:13.040 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)" in 798.3459ms
+2020-05-28 12:44:13.041 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:13.041 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:44:13.041 +01:00 [Information] Request finished in 835.0451ms 200 application/json; charset=utf-8
+2020-05-28 12:44:19.823 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api/Applicant/v1  
+2020-05-28 12:44:19.824 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1"'
+2020-05-28 12:44:19.824 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}"' is valid for the request path '"/api/Applicant/v1"'
+2020-05-28 12:44:19.825 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:19.828 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:44:19.828 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:19.837 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:44:19.837 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:44:19.837 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:44:19.838 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:19.838 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:44:19.839 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:19.840 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:19.843 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:19.844 +01:00 [Information] Retrieving all applicants...
+2020-05-28 12:44:19.868 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:44:20.347 +01:00 [Debug] "queryContext => new QueryingEnumerable<ApplicantModel>(
+    queryContext, 
+    InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: ApplicantModel)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 0, Property: ApplicantModel.ID (int) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: ApplicantModel.Address (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 2, Property: ApplicantModel.Age (int) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: ApplicantModel.CountryOfOrigin (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 4, Property: ApplicantModel.EMailAdress (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 5, Property: ApplicantModel.FamilyName (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<bool>(valueBuffer, 6, Property: ApplicantModel.Hired (bool) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 7, Property: ApplicantModel.Name (string) Required) 
+        })), 
+    Func<QueryContext, ValueBuffer, ApplicantModel>, 
+    Hahn.ApplicatonProcess.May2020.Data.DataAccess.ApplicantContext, 
+    DiagnosticsLogger<Query>
+)"
+2020-05-28 12:44:20.371 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:20.372 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:44:20.374 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:44:20.375 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:44:20.375 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:44:20.375 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:44:20.375 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:44:20.375 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:44:20.375 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:44:20.381 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 542.1617ms
+2020-05-28 12:44:20.381 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:20.382 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:44:20.382 +01:00 [Information] Request finished in 559.363ms 200 application/json; charset=utf-8
+2020-05-28 12:44:56.802 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/1 application/json 189
+2020-05-28 12:44:56.803 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/1"'
+2020-05-28 12:44:56.817 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/1"'
+2020-05-28 12:44:56.817 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:56.818 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:44:56.818 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:44:56.855 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:44:56.855 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:44:56.855 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:44:56.855 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:56.855 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:44:56.855 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:44:56.855 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:56.856 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:44:56.857 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:44:56.858 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:44:56.860 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:44:56.860 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:44:56.860 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:44:56.860 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:44:56.860 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:44:56.860 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:44:56.861 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:44:56.862 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:44:56.862 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:56.862 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:56.862 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:44:56.863 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:44:57.728 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:44:57.980 +01:00 [Debug] "queryContext => new QueryingEnumerable<ApplicantModel>(
+    queryContext, 
+    new ResultEnumerable(() => InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: ApplicantModel)
+        .Where(valueBuffer => EntityMaterializerSource.TryReadValue<int>(valueBuffer, 0, Property: ApplicantModel.ID (int) Required PK AfterSave:Throw ValueGenerated.OnAdd) == InMemoryExpressionTranslatingExpressionVisitor.GetParameterValue<int>(
+            queryContext: queryContext, 
+            parameterName: \"__p_0\"))
+        .FirstOrDefault())
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 0, Property: ApplicantModel.ID (int) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: ApplicantModel.Address (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<int>(valueBuffer, 2, Property: ApplicantModel.Age (int) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: ApplicantModel.CountryOfOrigin (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 4, Property: ApplicantModel.EMailAdress (string)), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 5, Property: ApplicantModel.FamilyName (string) Required), 
+            (object)EntityMaterializerSource.TryReadValue<bool>(valueBuffer, 6, Property: ApplicantModel.Hired (bool) Required), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 7, Property: ApplicantModel.Name (string) Required) 
+        })), 
+    Func<QueryContext, ValueBuffer, ApplicantModel>, 
+    Hahn.ApplicatonProcess.May2020.Data.DataAccess.ApplicantContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()"
+2020-05-28 12:44:57.995 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:45:11.545 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:45:13.642 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:45:13.642 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:45:13.647 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:45:13.657 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:45:13.657 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:45:13.657 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:45:19.464 +01:00 [Information] Successfully updated 1
+2020-05-28 12:45:19.464 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:45:19.465 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:45:19.465 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:45:19.465 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:45:19.465 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:45:19.465 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:45:19.466 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)" in 22610.5165ms
+2020-05-28 12:45:19.466 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:45:19.467 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:45:19.467 +01:00 [Information] Request finished in 22664.3985ms 200 application/json; charset=utf-8
+2020-05-28 12:45:26.724 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/1 application/json 189
+2020-05-28 12:45:26.725 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/1"'
+2020-05-28 12:45:26.725 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/1"'
+2020-05-28 12:45:26.725 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:45:26.726 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:45:26.726 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:45:26.726 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:45:26.727 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:45:26.727 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:45:26.727 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:45:26.727 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:45:26.727 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:45:26.727 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:45:26.728 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:45:26.728 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:45:26.729 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:45:26.729 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:45:26.729 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:45:26.729 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:45:26.729 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:45:26.729 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:45:26.729 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:45:26.729 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:45:26.730 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:45:26.730 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:45:26.730 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:45:26.730 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:45:26.731 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:45:27.555 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:45:27.564 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:02.206 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:02.727 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:48:02.727 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:48:02.727 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:48:02.728 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:48:02.728 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:02.729 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:48:04.939 +01:00 [Information] Successfully updated 1
+2020-05-28 12:48:04.939 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:48:04.940 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:48:04.940 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:48:04.940 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:48:04.940 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:48:04.940 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:48:04.952 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)" in 158220.7461ms
+2020-05-28 12:48:04.952 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:04.952 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:48:04.952 +01:00 [Information] Request finished in 158224.4533ms 200 application/json; charset=utf-8
+2020-05-28 12:48:10.216 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api/Applicant/v1  
+2020-05-28 12:48:10.216 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1"'
+2020-05-28 12:48:10.216 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}"' is valid for the request path '"/api/Applicant/v1"'
+2020-05-28 12:48:10.217 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:10.217 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:48:10.217 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:10.217 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:48:10.217 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:48:10.218 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:48:10.218 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:48:10.218 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:48:10.218 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:48:10.218 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:48:10.218 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:48:10.219 +01:00 [Information] Retrieving all applicants...
+2020-05-28 12:48:10.220 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:48:10.220 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:10.221 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:10.221 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:48:10.221 +01:00 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2020-05-28 12:48:10.221 +01:00 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2020-05-28 12:48:10.221 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:48:10.221 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:48:10.221 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:48:10.221 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:48:10.225 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)" in 6.713ms
+2020-05-28 12:48:10.225 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:10.225 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:48:10.225 +01:00 [Information] Request finished in 9.0177ms 200 application/json; charset=utf-8
+2020-05-28 12:48:23.737 +01:00 [Information] Request starting HTTP/2.0 PUT https://localhost:44321/api/Applicant/v1/2 application/json 189
+2020-05-28 12:48:23.738 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:48:23.738 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}/{id}"' is valid for the request path '"/api/Applicant/v1/2"'
+2020-05-28 12:48:23.738 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:23.738 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:48:23.738 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:23.739 +01:00 [Information] Route matched with "{action = \"Put\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Put(Int32, Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel)" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:48:23.739 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:48:23.739 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:48:23.739 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:48:23.739 +01:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-28 12:48:23.739 +01:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2020-05-28 12:48:23.739 +01:00 [Debug] Executing controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:48:23.745 +01:00 [Debug] Executed controller factory for controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web")
+2020-05-28 12:48:23.746 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:48:23.746 +01:00 [Debug] Attempting to bind parameter '"id"' of type '"System.Int32"' using the name '"id"' in request data ...
+2020-05-28 12:48:23.747 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:48:23.747 +01:00 [Debug] Done attempting to bind parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:48:23.747 +01:00 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.Int32"' ...
+2020-05-28 12:48:23.747 +01:00 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.Int32"'.
+2020-05-28 12:48:23.747 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:48:23.748 +01:00 [Debug] Attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' using the name '""' in request data ...
+2020-05-28 12:48:23.748 +01:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2020-05-28 12:48:23.751 +01:00 [Debug] JSON input formatter succeeded, deserializing to type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'
+2020-05-28 12:48:23.751 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:48:23.751 +01:00 [Debug] Done attempting to bind parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:48:23.751 +01:00 [Debug] Attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"' ...
+2020-05-28 12:48:23.752 +01:00 [Debug] Done attempting to validate the bound parameter '"applicant"' of type '"Hahn.ApplicatonProcess.May2020.Data.Entities.ApplicantModel"'.
+2020-05-28 12:48:24.623 +01:00 [Information] Entity Framework Core "3.1.4" initialized '"ApplicantContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=ApplicantDB "
+2020-05-28 12:48:24.627 +01:00 [Debug] Context '"ApplicantContext"' started tracking '"ApplicantModel"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:24.635 +01:00 [Debug] Unchanged '"ApplicantModel"."FamilyName"' detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2020-05-28 12:48:24.636 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:24.637 +01:00 [Debug] SaveChanges starting for '"ApplicantContext"'.
+2020-05-28 12:48:24.637 +01:00 [Debug] DetectChanges starting for '"ApplicantContext"'.
+2020-05-28 12:48:24.637 +01:00 [Debug] DetectChanges completed for '"ApplicantContext"'.
+2020-05-28 12:48:24.637 +01:00 [Information] Saved 1 entities to in-memory store.
+2020-05-28 12:48:24.638 +01:00 [Debug] An '"ApplicantModel"' entity tracked by '"ApplicantContext"' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2020-05-28 12:48:24.638 +01:00 [Debug] SaveChanges completed for '"ApplicantContext"' with 1 entities written to the database.
+2020-05-28 12:48:24.638 +01:00 [Information] Successfully updated 2
+2020-05-28 12:48:24.638 +01:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2020-05-28 12:48:24.638 +01:00 [Debug] No information found on request to perform content negotiation.
+2020-05-28 12:48:24.639 +01:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2020-05-28 12:48:24.639 +01:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2020-05-28 12:48:24.639 +01:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2020-05-28 12:48:24.639 +01:00 [Information] Executing ObjectResult, writing value of type '"Hahn.ApplicatonProcess.May2020.Domain.Models.Response"'.
+2020-05-28 12:48:24.643 +01:00 [Information] Executed action "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)" in 904.096ms
+2020-05-28 12:48:24.643 +01:00 [Information] Executed endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:24.643 +01:00 [Debug] '"ApplicantContext"' disposed.
+2020-05-28 12:48:24.643 +01:00 [Information] Request finished in 906.1373ms 200 application/json; charset=utf-8
+2020-05-28 12:48:32.197 +01:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api/Applicant/v1  
+2020-05-28 12:48:32.197 +01:00 [Debug] 1 candidate(s) found for the request path '"/api/Applicant/v1"'
+2020-05-28 12:48:32.198 +01:00 [Debug] Endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"' with route pattern '"api/Applicant/v{version:apiVersion}"' is valid for the request path '"/api/Applicant/v1"'
+2020-05-28 12:48:32.198 +01:00 [Debug] Request matched endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:32.198 +01:00 [Debug] Static files was skipped as the request already matched an endpoint.
+2020-05-28 12:48:32.198 +01:00 [Information] Executing endpoint '"Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController.Get (Hahn.ApplicatonProcess.May2020.Web)"'
+2020-05-28 12:48:32.199 +01:00 [Information] Route matched with "{action = \"Get\", controller = \"Applicant\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "Hahn.ApplicatonProcess.May2020.Web.Controllers.ApplicantController" ("Hahn.ApplicatonProcess.May2020.Web").
+2020-05-28 12:48:32.199 +01:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-28 12:48:32.199 +01:00 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2020-05-28 12:48:32.199 +01:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContent

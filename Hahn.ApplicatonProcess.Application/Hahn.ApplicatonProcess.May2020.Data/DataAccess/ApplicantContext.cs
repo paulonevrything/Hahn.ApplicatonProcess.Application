@@ -15,29 +15,7 @@ namespace Hahn.ApplicatonProcess.May2020.Data.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ApplicantModel>().HasData(new ApplicantModel
-            {
-                ID = 1,
-                Name = "Paul",
-                FamilyName = "Watson",
-                Address = "1 Joseph Lambo Street, Ebute Metta, Lagos",
-                CountryOfOrigin = "Nigeria",
-                EMailAdress = "pauloolabisi@gmail.com",
-                Age = 27,
-                Hired = true
-            });
-
-            modelBuilder.Entity<ApplicantModel>().HasData(new ApplicantModel
-            {
-                ID = 2,
-                Name = "John",
-                FamilyName = "Doe",
-                Address = "16, Hartfield Avenue, Banana Island, Lagos",
-                CountryOfOrigin = "Nigeria",
-                EMailAdress = "john.doe@outlook.com",
-                Age = 22,
-                Hired = false
-            });
+            modelBuilder.Entity<ApplicantModel>().ToTable("Applicant");
         }
     }
 }

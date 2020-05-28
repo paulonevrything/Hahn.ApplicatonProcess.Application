@@ -31,8 +31,6 @@ namespace Hahn.ApplicatonProcess.May2020.Web
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            //Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
-            //Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }

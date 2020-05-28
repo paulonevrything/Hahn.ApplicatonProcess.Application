@@ -95,6 +95,14 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             Response response = _utilities.InitializeResponse();
             var applicantFound = _applicantRepository.GetApplicantByID(id);
 
+            applicantFound.Name = applicant.Name;
+            applicantFound.FamilyName = applicant.FamilyName;
+            applicantFound.Address = applicant.Address;
+            applicantFound.Age = applicant.Age;
+            applicantFound.CountryOfOrigin = applicant.CountryOfOrigin;
+            applicantFound.EMailAdress = applicant.EMailAdress;
+            applicantFound.Hired = applicant.Hired;
+
             if (applicantFound == null)
             {
                 return _utilities.UnsuccessfulResponse(response, "Invalid id supplied. Could not match applicant to id");
@@ -102,7 +110,7 @@ namespace Hahn.ApplicatonProcess.May2020.Domain.Services
             try
             {
                 // Update and save changes
-                _applicantRepository.UpdateApplicant(applicant);
+                _applicantRepository.UpdateApplicant(applicantFound);
                 _applicantRepository.Save();
             }
             catch (Exception ex)
